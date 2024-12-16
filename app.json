@@ -1,16 +1,17 @@
 {
   "expo": {
-    "name": "test3",
-    "slug": "test3",
+    "name": "Ecommerce",
+    "slug": "Autonomous",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "orientation": "potrait",
+    "icon": "./assets/shopping-cart.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "tabletImage": "./assets/icon.png",
+      "backgroundColor": "#FFA500"
     },
     "ios": {
       "supportsTablet": true
