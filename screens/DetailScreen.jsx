@@ -71,7 +71,7 @@ const DetailScreen = ({navigation,route}) => {
       </View>
       <View  className=" justify-center items-center py-4">
       <TouchableOpacity 
-     onPress={()=>navigation.navigate('')} 
+     onPress={()=>navigation.navigate('cart')} 
       className="w-[80%]  items-center justify-center py-2  bg-orange-500 rounded-xl">
         <Text className="text-white text-center">Add to Cart</Text>
       </TouchableOpacity>

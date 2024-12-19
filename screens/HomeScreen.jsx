@@ -92,13 +92,13 @@ const HomeScreen = ({navigation}) => {
       </View>
 
       <View className="w-full justify-between flex-row items-center px-4">
-        {categories.map((item) => {
+        {categories.map((logo) => {
           return (
-            <View key={item.id} className="items-center">
+            <View key={logo.id} className="items-center">
               <Pressable className="h-14 w-14 justify-center items-center rounded-full bg-neutral-300">
-                <Image className="h-8 w-8" source={item.image} />
+                <Image className="h-8 w-8" source={logo.image} />
               </Pressable>
-              <Text className="text-neutral-600">{item.name}</Text>
+              <Text className="text-neutral-600">{logo.name}</Text>
             </View>
           );
         })}
@@ -136,6 +136,7 @@ const HomeScreen = ({navigation}) => {
               productimage:product.image,
               productdescription:product.description
             })}
+           
             key={product.id} className="w-[48%] bg-white h-40 overflow-hidden shadow shadow-lg shadow-neutral-200 rounded-2xl">
             <View className="w-full h-[70%] justify-center items-center">
              <Image className="w-full object-fit h-full" source={product.image}/>

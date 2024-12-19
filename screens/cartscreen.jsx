@@ -3,22 +3,23 @@ import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 
-const cartscreen = ({navigation}) => {
+const cartscreen = ({navigation,route}) => {
+  // const {productname,productprice,productimage,productdescription} = route.params;
   return (
     <View className="flex-1 justify- pt-8 px-4 items- flex-col  ">
       <View className="items-center mt-12  justify-between flex-row">
-        <TouchableOpacity className=" "
+        <TouchableOpacity className="bg-black rounded-full "
       onPress={() =>navigation.goBack()}
       >
-        <Icon  name="chevron-left" size={30} color="black"/>
+        <Icon  name="chevron-left" size={30} color="white"/>
         </TouchableOpacity>
         <Icon name="bell-outline" size={30} color="black"/>
       </View>
               {/* search input */}
-              <View className="w-full py-4 relative justify-between flex-row items-center space-x-6">
+          <View className="w-full py-4 relative justify-between flex-row items-center space-x-6">
           <View className="w-[80%]">
             <TextInput
-              placeholder="Search "
+              placeholder="Search  "
               className="border-2  border-gray-200 h-10 bg-white relative w-full  px-14 py-2 rounded-full text-"
               
             />
@@ -43,13 +44,13 @@ const cartscreen = ({navigation}) => {
             <Image className="rounded-md w-20 h-28 " source={require('../assets/shoe1.jpg')} />
           </View>
           <View className="flex-1 px-4">
-            <Text className="font-bold text-xl">Product Name</Text>
+            <Text className="font-bold text-xl">Product name</Text>
             <Text className="text-gray-600">Product Description</Text>
             <Text className="text-black font-bold text-xl ">$2435.68</Text>
           </View>
           
-          <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-500 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+          <Pressable className=" px-2 flex rounded-full py-1 bottom-5  bg-orange-500 absolute right-2">
+            <Text className="font-semibold text-white  text-lg">Add to cart</Text>
           </Pressable>
         </View>
         <View className="w-full shadow-md border border-gray-100 shadow-gray-300 py-1 bg-white flex-row items-center rounded-xl ">
@@ -59,11 +60,11 @@ const cartscreen = ({navigation}) => {
           <View className="flex-1 px-4">
             <Text className="font-bold text-xl">Product Name</Text>
             <Text className="text-gray-600">Product Description</Text>
-            <Text className="text-black font-bold text-xl ">$2435.68</Text>
+            <Text className="text-black font-bold text-lg ">$2435.68</Text>
           </View>
           
-          <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-500 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+          <Pressable className="w-[1/5] px-2 flex rounded-full py-1 bottom-5  bg-orange-500 absolute right-2">
+            <Text className="font-semibold text-white  text-xl">Add to cart</Text>
           </Pressable>
         </View>
         <View className="w-full shadow-md border border-gray-100 shadow-gray-300 py-1 bg-white flex-row items-center rounded-xl ">
@@ -76,8 +77,8 @@ const cartscreen = ({navigation}) => {
             <Text className="text-black font-bold text-xl ">$2435.68</Text>
           </View>
           
-          <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+          <Pressable className="w-[1/5] px-2 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
+            <Text className="font-semibold text-white  text-lg">Add to cart</Text>
           </Pressable>
         </View>
         <View className="w-full shadow-md border border-gray-100 shadow-gray-300 py-1 bg-white flex-row items-center rounded-xl ">
@@ -90,8 +91,8 @@ const cartscreen = ({navigation}) => {
             <Text className="text-black font-bold text-xl ">$2435.68</Text>
           </View>
           
-          <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+          <Pressable className="w-[1/5] px-2 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
+            <Text className="font-semibold text-white  text-lg">Add to cart</Text>
           </Pressable>
         </View>
         <View className="w-full shadow-md border border-gray-100 shadow-gray-300 py-1 bg-white flex-row items-center rounded-xl ">
@@ -104,8 +105,8 @@ const cartscreen = ({navigation}) => {
             <Text className="text-black font-bold text-xl ">$2435.68</Text>
           </View>
           
-          <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+          <Pressable className="w-[1/5] px-2 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
+            <Text className="font-semibold text-white  text-lg">Add to cart</Text>
           </Pressable>
         </View>
         <View className="w-full shadow-md border border-gray-100 shadow-gray-300 py-1 bg-white flex-row items-center rounded-xl ">
@@ -118,8 +119,8 @@ const cartscreen = ({navigation}) => {
             <Text className="text-black font-bold text-xl ">$2435.68</Text>
           </View>
           
-          <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+          <Pressable className="w-[1/5] px-2 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
+            <Text className="font-semibold text-white  text-lg">Add to cart</Text>
           </Pressable>
         </View>
         <View className="w-full shadow-md border border-gray-100 shadow-gray-300 py-1 bg-white flex-row items-center rounded-xl ">
@@ -132,8 +133,8 @@ const cartscreen = ({navigation}) => {
             <Text className="text-black font-bold text-xl ">$2435.68</Text>
           </View>
           
-          <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+          <Pressable className="w-[1/5] px-2 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
+            <Text className="font-semibold text-white  text-lg">Add to cart</Text>
           </Pressable>
         </View>
         <View className="w-full shadow-md border border-gray-100 shadow-gray-300 py-1 bg-white flex-row items-center rounded-xl ">
@@ -147,7 +148,7 @@ const cartscreen = ({navigation}) => {
           </View>
           
           <Pressable className="w-[1/5] px-4 flex rounded-full py-1 bottom-5  bg-orange-400 absolute right-2">
-            <Text className="font-bold text-white  text-xl">Add to cart</Text>
+            <Text className="font-semibold text-white  text-lg">Add to cart</Text>
           </Pressable>
         </View>
         </View>

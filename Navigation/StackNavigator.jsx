@@ -9,6 +9,7 @@ import LoginScreen from '../screens/LoginScreen';
 import SigninScreen from '../screens/SigninScreen';
 import BottomNavigator from './BottomNavigator';
 import DetailScreen from '../screens/DetailScreen';
+import cartscreen from '../screens/cartscreen';
 
 
 const Stack = createStackNavigator();
@@ -22,6 +23,7 @@ const StackNavigator = () => {
         <Stack.Screen name="signin" component={SigninScreen} options={{headerShown:false}} />
         <Stack.Screen name="landing" component={BottomNavigator} options={{headerShown:false}} />
         <Stack.Screen name="detail" component={DetailScreen} options={{headerShown:false}} />
+        <Stack.Screen name="cart" component={cartscreen} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
   )

@@ -3,14 +3,23 @@ import React from 'react'
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 
-const ProfileScreen = () => {
+const ProfileScreen = ({navigation}) => {
   return (
     <View className="flex-1 justify-start  bg-neutral-200">
-      <ImageBackground className="w-full h-80 object-fit " source={require('../assets/bg.jpg')}>
-    <View className="items-center justify-end space-x-4 px-4 flex-row pt-10">
+      <ImageBackground className="w-full h-80 object-fit" source={require('../assets/bg.jpg')}>
+    <View className="items-center justify-between space-x-4 px-4 flex-row pt-10">
+      <TouchableOpacity
+      onPress={()=>navigation.goBack()}
+      className="bg-white rounded-full">
+      <Icon  name="chevron-left" size={30} color={"black"}/>
+
+      </TouchableOpacity>
+    <View className="items-center justify-end space-x-4 px-4 flex-row ">
       <Icon  name="heart-outline" size={24} color={"white"}/>
       <Icon  name="shopping" size={24} color={"white"}/>
     </View>
+    </View>
+
     <View className="items-center justify-center flex-col space-y-7">
       <Image className="w-32 h-32 rounded-full" source={require('../assets/person10.jpeg')} />
       <Text className="text-white text-2xl font-bold">Miranda West</Text>
